@@ -1,8 +1,9 @@
-site_name: ${{values.component_id}}
-site_description: ${{values.description}}
+site_name: Petstore
+site_description: L'API Petstore.
 
 nav:
   - Introduction: index.md
+  - Toto: toto.md
 
 plugins:
   - techdocs-core
