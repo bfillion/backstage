@@ -19,6 +19,8 @@ spec:
   lifecycle: experimental
   owner: coei
   system: coei
+  dependsOn:
+    - resource:coei/petstore-db
   providesApis: [petstore-api]
 ---
 # https://backstage.io/docs/features/software-catalog/descriptor-format#kind-api
