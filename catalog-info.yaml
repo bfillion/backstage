@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: org-data
+spec:
+  type: url
+  targets:
+    - https://github.com/bfillion/backstage/blob/main/produit1/catalog-info.yaml
+    
