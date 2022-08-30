@@ -1,8 +1,6 @@
-# ${{ values.component_id }}
+# Petstore
 
-${{ values.description }}
+Ceci est l'API Petstore
 
-## Getting started
+## Pour démarrer
 
-Start writing your documentation by adding more markdown (.md) files to this
-folder (/docs) or replace the content in this file.
