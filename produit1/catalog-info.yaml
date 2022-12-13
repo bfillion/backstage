@@ -7,6 +7,16 @@ metadata:
 spec:
   owner: exmiusti
 ---
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: petstore-db
+  description: Base de données Petstore
+spec:
+  type: database
+  owner: exmiusti
+  system: exmiusti
+---
 # https://backstage.io/docs/features/software-catalog/descriptor-format#kind-component
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -1088,13 +1098,3 @@ spec:
             "url": "http://swagger.io"
         }
     }
----
-apiVersion: backstage.io/v1alpha1
-kind: Resource
-metadata:
-  name: petstore-db
-  description: Base de données Petstore
-spec:
-  type: database
-  owner: exmiusti
-  system: exmiusti
