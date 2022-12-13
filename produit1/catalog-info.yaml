@@ -30,7 +30,7 @@ spec:
   owner: exmiusti
   system: exmiusti
   dependsOn:
-    - resource:exmiusti/petstore-db
+    - resource:petstore-db
   providesApis: [petstore-api]
 ---
 # https://backstage.io/docs/features/software-catalog/descriptor-format#kind-api
