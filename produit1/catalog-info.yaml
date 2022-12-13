@@ -24,7 +24,7 @@ metadata:
   name: petstore
   annotations:
     backstage.io/techdocs-ref: dir:.
-    github.com/team-slug: bfillion/backstage
+    github.com/project-slug: bfillion/backstage
 spec:
   type: website
   lifecycle: experimental
