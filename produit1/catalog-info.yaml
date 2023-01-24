@@ -1,11 +1,20 @@
 ---
+apiVersion: backstage.io/v1alpha1
+kind: Domain
+metadata:
+  name: collectif
+  description: Everything about artists
+spec:
+  owner: corpo
+---
 # https://backstage.io/docs/features/software-catalog/descriptor-format#kind-system
 apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
-  name: exmiusti
+  name: client
 spec:
-  owner: exmiusti
+  owner: corpo
+  domain: collectif
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Resource
@@ -14,8 +23,8 @@ metadata:
   description: Base de données Petstore
 spec:
   type: database
-  owner: exmiusti
-  system: exmiusti
+  owner: corpo
+  system: client
 ---
 # https://backstage.io/docs/features/software-catalog/descriptor-format#kind-component
 apiVersion: backstage.io/v1alpha1
@@ -32,8 +41,8 @@ metadata:
 spec:
   type: service
   lifecycle: experimental
-  owner: exmiusti
-  system: exmiusti
+  owner: corpo
+  system: client
   dependsOn:
     - resource:petstore-db
   providesApis: [petstore-api]
@@ -46,8 +55,8 @@ metadata:
 spec:
   type: openapi
   lifecycle: experimental
-  owner: exmiusti
-  system: exmiusti
+  owner: corpo
+  system: client
   definition: |
     {
         "swagger": "2.0",
