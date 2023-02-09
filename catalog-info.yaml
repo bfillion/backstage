@@ -1,7 +1,7 @@
-apiVersion: backstage.io/v1alpha1
+apiVersion: backstage.io/v1
 kind: Location
 metadata:
-  name: org-data
+  name: org
 spec:
   type: url
   targets:
