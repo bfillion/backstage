@@ -1,0 +1,8 @@
+site_name: Dommage
+site_description: Gestion Client.
+
+nav:
+  - Introduction: index.md
+
+plugins:
+  - techdocs-core
