@@ -1,0 +1,35 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Domain
+metadata:
+  name: dommage
+  description: Gestion du dommage
+spec:
+  owner: dommage
+---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-system
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: client
+spec:
+  owner: dommage
+  domain: dommage
+---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-component
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: client
+  description: GuireWire - Client
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: bfillion/backstage
+    backstage.io/adr-location: docs/adrs
+  tags:
+    - "csharp"
+spec:
+  type: service
+  lifecycle: production
+  owner: dommage
+  system: client

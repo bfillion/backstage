@@ -6,4 +6,5 @@ spec:
   type: url
   targets:
     - https://github.com/bfillion/backstage/blob/main/produit1/catalog-info.yaml
+    - https://github.com/bfillion/backstage/blob/main/produit2/catalog-info.yaml
     
