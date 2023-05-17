@@ -3,6 +3,7 @@ site_description: Gestion Client.
 
 nav:
   - Introduction: index.md
+  - Architecture: architecture.md
 
 plugins:
   - techdocs-core
