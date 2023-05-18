@@ -11,3 +11,5 @@ Architecture du Dommage.
 
 <script type="text/javascript" src="http://localhost:8088/static/js/structurizr-embed.js"></script>
 </div>
+
+## Informations supplémentaires
